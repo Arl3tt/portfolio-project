@@ -1,0 +1,103 @@
+/* styles.css - Starter CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    color: #fff;
+    padding: 10px 30px;
+}
+.site-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: all 0.2s;
+}
+.nav-links li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffd700;
+}
+.home-icon {
+    font-size: 1.7em;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 30px;
+}
+section {
+    margin: 40px auto;
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.skills-list, .projects-list, .recommendations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f0f0;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+.skill img {
+    width: 32px;
+    height: 32px;
+}
+#recommendation-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#recommendation-form input, #recommendation-form textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+#recommendation-form button {
+    width: fit-content;
+    padding: 8px 18px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+#recommendation-form button:hover {
+    background: #ffd700;
+    color: #222;
+}
