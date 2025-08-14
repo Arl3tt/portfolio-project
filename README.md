@@ -46,10 +46,10 @@ Feel free to check out my projects and reach out if you’re interested in colla
 --->
 ## 🏷️ Badges
 ![BCI](https://img.shields.io/badge/BCI-EEG%20%7C%20OpenBCI-informational)  
-![NeuroAI](https://img.shields.io/badge/NeuroAI-Emotion--Aware%20%7C%20Cognition-blue)  
-![ML](https://img.shields.io/badge/ML/DL-TensorFlow%20%7C%20PyTorch-orange)  
-![Cloud](https://img.shields.io/badge/Cloud-AWS%20%7C%20GCP%20%7C%20Azure-success)  
-![MLOps](https://img.shields.io/badge/MLOps-Docker%20%7C%20Kubernetes%20%7C%20CI%2FCD-brightgreen)  
+![NeuroAI](https://img.shields.io/badge/NeuroAI-Neuroscience%20%7C%20BCI%20%7C%20AI%20%7C%20Cognition-blue)  
+![ML](https://img.shields.io/badge/ML%2FDL-TensorFlow%20%7C%20PyTorch%20%7C%20Keras-orange)  
+![Cloud](https://img.shields.io/badge/Cloud-APIs%20%7C%20GCP%20%7C%20Azure-success)  
+![MLOps](https://img.shields.io/badge/MLOps-Docker%20%7C%20Git%20%7C%20Kubernetes%20%7C%20CI%2FCD-brightgreen) 
 ![OpenToWork](https://img.shields.io/badge/Open%20to-BCI%20%7C%20NeuroAI%20roles-purple)
 
 ---
