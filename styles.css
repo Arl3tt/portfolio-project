@@ -1,9 +1,15 @@
 /* styles.css - Starter CSS */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background-color: #ffe4ec; /* light pink */
+}
+
+/* Use Elephant font for the user's name */
+#about h1 {
+    font-family: 'Elephant', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
 }
 nav {
     display: flex;
@@ -100,4 +106,6 @@ section {
 #recommendation-form button:hover {
     background: #ffd700;
     color: #222;
+}
+
 }
