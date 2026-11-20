@@ -1,4 +1,4 @@
-﻿/* styles.css - Professional Clean Design with Dark Mode as Default */
+/* styles.css - Professional Clean Design with Dark Mode as Default */
 :root {
     /* Dark Theme Variables (Default) */
     --bg-primary: #1a1a1a;
@@ -63,33 +63,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-}
-
-.skip-link {
-    position: fixed;
-    left: 16px;
-    top: -80px;
-    z-index: 1000;
-    padding: 10px 16px;
-    background: var(--button-bg);
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: top 0.2s ease;
-}
-
-.skip-link:focus {
-    top: 12px;
-}
-
-:focus-visible {
-    outline: 3px solid var(--nav-link-hover);
-    outline-offset: 3px;
-}
-
 /* Use Times New Roman font for the user's name */
 #about h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -99,9 +72,6 @@ html {
 
 nav {
     display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 100;
     align-items: center;
     justify-content: space-between;
     background: var(--nav-bg);
@@ -775,28 +745,17 @@ section h2 {
         flex-direction: column;
         gap: 15px;
         padding: 15px 20px;
-        position: relative;
     }
 
     .nav-links {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 4px;
-    }
-
-    .nav-links li a {
-        display: block;
-        padding: 7px 9px;
-        font-size: 0.9em;
+        flex-direction: column;
+        gap: 10px;
     }
 
     section {
-        margin: 20px auto;
-        width: calc(100% - 32px);
-        max-width: none;
-        padding: 24px 18px;
-        box-sizing: border-box;
+        margin: 20px;
+        max-width: 95%;
+        padding: 25px;
     }
 
     .projects-grid,
@@ -826,52 +785,6 @@ section h2 {
 
     .certifications-list {
         grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-img {
-        width: 112px;
-        height: 112px;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contact-links {
-        flex-direction: column;
-    }
-
-    .contact-link {
-        text-align: center;
-    }
-
-    .status-badge {
-        align-self: flex-start;
-    }
-
-    .activity-stats {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
     }
 }
 

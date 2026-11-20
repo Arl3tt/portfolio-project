@@ -48,10 +48,6 @@ function addRecommendation(name, text) {
     const recList = document.querySelector('.recommendations-list');
     const recDiv = document.createElement('div');
     recDiv.className = 'recommendation';
-    const nameElement = document.createElement('strong');
-    const textElement = document.createElement('p');
-    nameElement.textContent = name;
-    textElement.textContent = text;
-    recDiv.append(nameElement, textElement);
+    recDiv.innerHTML = `<strong>${name}</strong><p>${text}</p>`;
     recList.appendChild(recDiv);
 }

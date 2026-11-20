@@ -4,16 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Vanessa Diaz's portfolio of neurotechnology, brain-computer interfaces, and artificial intelligence projects.">
-        <title>Vanessa Diaz | NeuroAI & BCI Portfolio</title>
+        <title>Client Portfolio</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <a class="skip-link" href="#about">Skip to main content</a>
         <!-- Navigation Bar -->
-        <nav aria-label="Primary navigation">
+        <nav>
             <div class="site-name">Vanessa Diaz</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -26,10 +23,13 @@
                 <li><a href="#certifications">Certificates</a></li>
             </ul>
             <div class="nav-controls">
-                <button id="theme-toggle" class="theme-toggle" title="Toggle Light Mode" aria-label="Toggle light mode">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Light Mode">
                     ☀️
                 </button>
-                <a class="home-icon" href="#about" title="Home" aria-label="Go to About section">♠</a>
+                <div class="home-icon" title="Home">
+                    <!-- Home icon will be styled in CSS -->
+                    <span>♠</span>
+                </div>
             </div>
         </nav>
 
@@ -668,6 +668,16 @@
                     <img src="https://img.icons8.com/ios-filled/50/certificate.png" alt="Certificate Icon"
                         class="cert-icon">
                     <div>
+                        <strong><a href="certificates/2025-hackathon-attendees-certificate.pdf" target="_blank"
+                                rel="noopener noreferrer">2025 Hackathon Attendees Certificate</a></strong><br>
+                        <span>Event</span>
+                    </div>
+                </div>
+
+                <div class="certification">
+                    <img src="https://img.icons8.com/ios-filled/50/certificate.png" alt="Certificate Icon"
+                        class="cert-icon">
+                    <div>
                         <strong><a
                                 href="certificates/bci-and-neurotechnology-masterclass-eeg-and-fnirs-2025-certificate.pdf"
                                 target="_blank">BCI &amp; Neurotechnology Masterclass (EEG &amp; fNIRS)
@@ -693,6 +703,30 @@
                         <strong><a
                                 href="certificates/ibm-building-ai-agents-and-agentic-workflows-specialization-certificate.pdf"
                                 target="_blank">Building AI Agents &amp; Agentic Workflows —
+                                Specialization</a></strong><br>
+                        <span>IBM</span>
+                    </div>
+                </div>
+
+                <div class="certification">
+                    <img src="https://img.icons8.com/ios-filled/50/certificate.png" alt="Certificate Icon"
+                        class="cert-icon">
+                    <div>
+                        <strong><a
+                                href="certificates/IBM-generative-AI-engineering-with-llms-specialization_Certification).pdf"
+                                target="_blank" rel="noopener noreferrer">Generative AI Engineering with LLMs
+                                Specialization</a></strong><br>
+                        <span>IBM</span>
+                    </div>
+                </div>
+
+                <div class="certification">
+                    <img src="https://img.icons8.com/ios-filled/50/certificate.png" alt="Certificate Icon"
+                        class="cert-icon">
+                    <div>
+                        <strong><a
+                                href="certificates/ibm-generative-ai-for-software_developers-specialization-certificate.pdf"
+                                target="_blank" rel="noopener noreferrer">Generative AI for Software Developers
                                 Specialization</a></strong><br>
                         <span>IBM</span>
                     </div>
@@ -811,10 +845,8 @@
                 </div>
             </div>
             <form id="recommendation-form">
-                <label for="rec-name">Your name</label>
-                <input type="text" id="rec-name" placeholder="Your Name" autocomplete="name" required>
-                <label for="rec-text">Your recommendation</label>
-                <textarea id="rec-text" placeholder="Your Recommendation" rows="5" required></textarea>
+                <input type="text" id="rec-name" placeholder="Your Name" required>
+                <textarea id="rec-text" placeholder="Your Recommendation" required></textarea>
                 <button type="submit">Submit Recommendation</button>
             </form>
         </section>
