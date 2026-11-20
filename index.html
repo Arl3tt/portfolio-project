@@ -4,13 +4,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Client Portfolio</title>
+        <meta name="description"
+            content="Vanessa Diaz's portfolio of neurotechnology, brain-computer interfaces, and artificial intelligence projects.">
+        <title>Vanessa Diaz | NeuroAI & BCI Portfolio</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
+        <a class="skip-link" href="#about">Skip to main content</a>
         <!-- Navigation Bar -->
-        <nav>
+        <nav aria-label="Primary navigation">
             <div class="site-name">Vanessa Diaz</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -23,13 +26,10 @@
                 <li><a href="#certifications">Certificates</a></li>
             </ul>
             <div class="nav-controls">
-                <button id="theme-toggle" class="theme-toggle" title="Toggle Light Mode">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Light Mode" aria-label="Toggle light mode">
                     ☀️
                 </button>
-                <div class="home-icon" title="Home">
-                    <!-- Home icon will be styled in CSS -->
-                    <span>♠</span>
-                </div>
+                <a class="home-icon" href="#about" title="Home" aria-label="Go to About section">♠</a>
             </div>
         </nav>
 
@@ -847,8 +847,10 @@
                 </div>
             </div>
             <form id="recommendation-form">
-                <input type="text" id="rec-name" placeholder="Your Name" required>
-                <textarea id="rec-text" placeholder="Your Recommendation" required></textarea>
+                <label for="rec-name">Your name</label>
+                <input type="text" id="rec-name" placeholder="Your Name" autocomplete="name" required>
+                <label for="rec-text">Your recommendation</label>
+                <textarea id="rec-text" placeholder="Your Recommendation" rows="5" required></textarea>
                 <button type="submit">Submit Recommendation</button>
             </form>
         </section>
